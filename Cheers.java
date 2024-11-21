@@ -1,16 +1,16 @@
 // Prints a crowd cheering output.
 public class Cheers {
         public static void main(String[] args) {
-                String Cheer = args[0];
+                String Cheer = args[0].toUpperCase();
                 int num = Integer.parseInt(args[1]);       
                 int length = Cheer.length();
-                String SpecialLetters = "AEFHILMNORSX";
+                String SpecialLetters = "AaEeFfHhIiLlMmNnOoRrSsXx";
                 String Indicator = "";
                 for (int i = 0; i < length; i++) {
                         if (SpecialLetters.indexOf(Cheer.charAt(i)) != -1) {
                                 Indicator = "an";
                         }else { 
-                                Indicator = "a";
+                                Indicator = "a ";
                         }
                         System.out.println("Give me " + Indicator + " " + Cheer.charAt(i) + ": " + Cheer.charAt(i) + "!");
                 }

@@ -17,7 +17,7 @@ public class CalcPi {
 		double benchmark = Math.PI;
 		pi = pi * 4;
 		System.out.println("pi according to Java: " + benchmark);
-		System.out.println("pi approximation: " + pi);
+		System.out.println("pi, approximated:     " + pi);
 	}
 
 }

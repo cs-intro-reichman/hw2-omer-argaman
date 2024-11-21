@@ -28,7 +28,6 @@ public class Collatz {
 				hailstone = counter2;
 				}
 		}
-		System.out.println("");
 		System.out.print("Every one of the first " + b + " hailstone sequences reached 1.");
 		}
 	}

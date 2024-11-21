@@ -15,7 +15,7 @@ public class TimeCalc {
             hours = hours % 24;
         }
 		String min = (minutes < 10) ? "0" + minutes : "" + minutes;
-        String hour = (hours == 0) ? "0" + hours : "" + hours;
+        String hour = (hours < 10) ? "0" + hours : "" + hours;
         System.out.println(hour + ":" + min);
         }
 
